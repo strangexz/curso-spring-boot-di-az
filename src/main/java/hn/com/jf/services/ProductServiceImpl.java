@@ -3,12 +3,17 @@ package hn.com.jf.services;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import hn.com.jf.models.Product;
-import hn.com.jf.repositories.ProductRepositoryImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import hn.com.jf.models.Product;
+import hn.com.jf.repositories.ProductRepository;
+
+@Component
 public class ProductServiceImpl implements ProductService {
 
-	private ProductRepositoryImpl repository = new ProductRepositoryImpl();
+	@Autowired
+	private ProductRepository repository;
 
 	@Override
 	public List<Product> findAll() {
