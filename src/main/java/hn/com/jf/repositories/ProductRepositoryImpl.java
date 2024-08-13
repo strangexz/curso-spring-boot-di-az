@@ -3,8 +3,11 @@ package hn.com.jf.repositories;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import hn.com.jf.models.Product;
 
+@Repository
 public class ProductRepositoryImpl implements ProductRepository {
 	private List<Product> data;
 
