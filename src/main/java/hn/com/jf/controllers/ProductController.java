@@ -1,4 +1,4 @@
-package hn.com.js.controllers;
+package hn.com.jf.controllers;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import hn.com.jf.services.ProductServiceImpl;
 @RestController
 @RequestMapping("/api")
 public class ProductController {
-
+	
 	private ProductServiceImpl service = new ProductServiceImpl();
 
 	@GetMapping
