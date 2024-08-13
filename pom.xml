@@ -10,7 +10,7 @@
   <groupId>hn.com.jf</groupId>
   <artifactId>curso-spring-boot-di-az</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Curso Spring Boot DI</name>
+  <name>CursoSpringBootDI</name>
   <description>Inyecciones de Dependencias en Spring Boot</description>
   <url/>
 	<licenses>
