@@ -4,10 +4,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import hn.com.jf.models.Product;
+import hn.com.jf.repositories.ProductRepositoryImpl;
 
 public class ProductServiceImpl implements ProductService {
 
-	private ProductServiceImpl repository = new ProductServiceImpl();
+	private ProductRepositoryImpl repository = new ProductRepositoryImpl();
 
 	@Override
 	public List<Product> findAll() {
