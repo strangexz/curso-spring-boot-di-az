@@ -3,11 +3,17 @@ package hn.com.jf.repositories;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
+//import org.springframework.web.context.annotation.RequestScope;
+//import org.springframework.web.context.annotation.SessionScope;
 
 import hn.com.jf.models.Product;
 
-@Repository
+//@SessionScope
+//@RequestScope
+@Primary
+@Repository("productList")
 public class ProductRepositoryImpl implements ProductRepository {
 	private List<Product> data;
 
